@@ -38,7 +38,7 @@ We provide information about each of the files used for deployment.
     3. Under project root directory, run Score.py to generate service_schema.json
     4. Set up operationalization environment
     5. Run the following command from project root to deploy 
-    >az ml service create realtime -f Score.py --model-file CVRandomForestModel.pkl -s service_schema.json -n <app_name> -r python
+      az ml service create realtime -f Score.py --model-file CVRandomForestModel.pkl -s service_schema.json -n <app_name> -r python -c aml_config\conda_dependencies.yml
 
 ## How to call the service
 
